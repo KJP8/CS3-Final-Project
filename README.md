@@ -17,9 +17,10 @@ Alternatively, if you'd like to see it in action without having to edit your Apa
 6. jQuery plug-in
 
 ## External Sourced Used
-External sources have more detailed information in in-line comments
 1. Bootstrap CSS - http://getbootstrap.com/getting-started/
 2. jQuery library - https://ajax.googleapis.com/
 3. Nutritionix API - https://www.nutritionix.com/business/api
 4. Background image - http://kwtri4b8r0ep8ho61118ipob.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/eradicating-food-deserts.jpg
 5. Stack Overflow - http://stackoverflow.com/
+
+Note: External sources have more detailed information in in-line comments
