@@ -18,7 +18,7 @@ Alternatively, if you'd like to see it in action without having to edit your Apa
 5. AJAX
 6. jQuery plug-in
 
-## External Sourced Used
+## External Sources Used
 1. Bootstrap CSS - http://getbootstrap.com/getting-started/
 2. jQuery library - https://ajax.googleapis.com/
 3. Nutritionix API - https://www.nutritionix.com/business/api
