@@ -1,5 +1,6 @@
 # CS3 Final Project
 By Keeley Peck
+https://github.com/KJP8/CS3-Final-Project
 
 ## What is it?
 My project is an application where users can add food items to a grocery list. The added items are stored in local storage so that a user can access the site from the same client/browser and always have access to his own list. Users can also delete foods from the list. In addition, whenever a user adds a food to the list, the user is presented with nutrition facts about that food, which is retrieved from the Nutritionix API.
