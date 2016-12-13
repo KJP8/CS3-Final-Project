@@ -11,6 +11,9 @@
 // On page load...
 $(document).ready(function() {
     
+    // For all checkboxes, apply the makeBig plug-in
+    $("input:checkbox").makeBig();
+    
     // Initialize foodArray
     var foodArray = [];
     
