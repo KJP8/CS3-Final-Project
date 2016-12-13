@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your Grocery List</title>
+        <meta charset="UTF-8">
+        <!-- Bootstrap CSS - http://getbootstrap.com/getting-started/ - used for styling framework-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/food.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/food.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid" id="nutritionixImg">
+                <a href="https://www.nutritionix.com/business/api"><img src="https://d3jpl91pxevbkh.cloudfront.net/nutritionix/image/upload/v1363458498/attribution_jqfdgy.png" alt="Nutritionix"></a>
+                <p class="navbar-text navbar-right" id="createdBy">Created by Keeley Peck</p>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="firstCol">
+                    <h2 class="text-center">Welcome!</h2>
+                    <p class="text-center">This tool allows you to enter foods into the field below to add them to your grocery list. As an added bonus, you get to see the nutritional information about each food you add as you add them! When you've finished shopping, you can delete all the foods from your list, or you can delete them one by one as you go.</p>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="foodName">Food</label>
+                            <input type="text" class="form-control" name="food" id="foodName" placeholder="Enter food name here" required >
+                        </div>
+                        <button type="button" class="btn btn-success" id="addFood">Add Food</button>
+                    </form>
+                    <h3 id="error">Please enter an actual food name!</h3>
+                    <h3 id="inList">That food is already in your list!</h3>
+                    <div id="nutritionInfo">
+                        <h2>Nutritional Information</h2>
+                        <div id="nutritionOutput">
+                            <p id="foodOutput"></p>
+                            <ul>
+                                <li id="cal"></li>
+                                <li id="fatCal"></li>
+                                <li id="fat"></li>
+                                <li id="serving"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="secondCol">
+                    <h2 id="grocery" class="text-center">Your Grocery List</h2>
+                    <form id="list">
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <input type="checkbox" class="listItem" id="selectAll" value="Select All">
+                                <label for="selectAll" class="listLabel" id="selectLabel">Select All</label>
+                                <button type="button" class="btn btn-success" id="deleteFood" disabled>Delete Food(s)</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

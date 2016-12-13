@@ -1,0 +1,77 @@
+body {
+    padding-top: 70px;
+    font-family: "Arial", Verdana, sans-serif;
+    background-image: url("http://kwtri4b8r0ep8ho61118ipob.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/eradicating-food-deserts.jpg")
+}
+
+.navbar-text {
+    margin-top: 7px;
+}
+
+#nutritionixImg {
+    padding-top: 7px;
+}
+
+#createdBy {
+    padding-right: 10px;
+}
+
+.row {
+    margin-bottom: 50px;
+    padding-bottom: 50%;
+    background-color: white;
+}
+
+.form {
+   padding: 20px 10px 20px 10px;
+}
+
+#secondCol {
+    padding-left: 50px;
+}
+
+#foodName {
+    width: 80%;
+}
+
+#error, #inList {
+    color: red;
+    display: none;
+}
+
+#foodOutput {
+    font-size: 1.8em;
+}
+
+#nutritionOutput {
+    border: 2px double green;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#nutritionInfo {
+    display: none;
+    margin-left: 20px;
+}
+
+#list {
+    margin-top: 40px;
+    
+}
+
+#deleteFood {
+    float: right;
+    clear: left;
+    margin-right: 50px;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    margin-left: 60px;
+}
+
+
+.listLabel {
+    margin-left: 70px;
+    font-size: 20px
+}
