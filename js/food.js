@@ -46,13 +46,14 @@ $(document).ready(function() {
         
         // Code source: http://stackoverflow.com/questions/18608954/how-to-prevent-user-from-entering-special-characters-in-text-box-when-length-is
         // Why used: I researched ways to disallow users to enter special characters as a way of preemptive form validation and this seemed to work the best. Since there wasn"t much I could change, I am siting this source directly
-        // What changed: I changed the variable names
+        // What changed: I changed the variable names, added space, and added backspace
         var key = e.which;
         // Initialize allowed input using Ascii values
         var input = key >= 65 && key <= 90 || // A-Z
             key >= 97 && key <= 122 || // a-z
             key >= 48 && key <= 57 || // 0-9
-            key == 32; // space
+            key == 32 || // space
+            key == 08; // space
         if (!input) { // user attempts to enter any character outside of the defined values
             e.preventDefault(); // do not render those characters
         }
